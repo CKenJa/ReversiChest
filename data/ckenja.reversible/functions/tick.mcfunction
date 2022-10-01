@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=ckenja.reversible] at @s run function ckenja.reversible:marker
