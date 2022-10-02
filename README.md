@@ -1,6 +1,10 @@
 # ReversiChest
 チェストでオセロができるデータパック
+
 Datapacks that can be reversi in chests for Minecraft java edition
+
+## ダウンロード
+[ここ](https://github.com/CKenJa/ReversiChest/releases/tag/misekoma)
 
 ## 前提データパック Dependent datapack
 * [Oh! My Dat!](https://github.com/Ai-Akaishi/OhMyDat)
