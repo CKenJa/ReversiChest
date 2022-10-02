@@ -1,4 +1,5 @@
 #スロット移動
+#tellraw @a {"score":{"name":"#slot","objective":"ckenja.reversible"}}
 function #ckenja.reversible:turn/callback/move
 scoreboard players operation $Move ArrayUtilInput = #turn ckenja.reversible
 function array_util:api/move

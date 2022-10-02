@@ -1,4 +1,5 @@
 #27枠のインベントリの空きスロットにnullを入れる
+#serialize.Itemsが入力、出力はarray_util: Array
 #diff.inputに比較したいデータを入れれば、それと違う場所のデータだけoutputに出力する
 
 data remove storage ckenja.reversible: serialize.output
@@ -18,3 +19,4 @@ data modify storage array_util: Array set from storage ckenja.reversible: serial
 function array_util:api/force_delete_cache
 function array_util:api/reverse
 data remove storage ckenja.reversible: serialize.diff.input
+data remove storage ckenja.reversible: serialize.Secondary
