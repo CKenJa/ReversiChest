@@ -4,7 +4,6 @@ execute if data storage ckenja.reversible: turn{callback:"down"} if score #turn 
 
 scoreboard players operation #turn.row ckenja.reversible = #turn ckenja.reversible
 scoreboard players operation #turn.row ckenja.reversible %= #9 ckenja.reversible
-execute if data storage ckenja.reversible: turn{callback:"left"} run tellraw @p {"score":{"name":"#turn.row","objective":"ckenja.reversible"}}
 execute if data storage ckenja.reversible: turn{callback:"left"} if score #turn.row ckenja.reversible matches 1.. run function ckenja.reversible:turn/store
 execute if data storage ckenja.reversible: turn{callback:"right"} if score #turn.row ckenja.reversible matches ..7 run function ckenja.reversible:turn/store
 

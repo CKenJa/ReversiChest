@@ -26,4 +26,9 @@ data modify block ~ ~ ~ Items[{Slot:24b}].id set from storage ckenja.reversible:
 data modify block ~ ~ ~ Items[{Slot:25b}].id set from storage ckenja.reversible: reflect.Items[{Slot:25b}].id
 data modify block ~ ~ ~ Items[{Slot:26b}].id set from storage ckenja.reversible: reflect.Items[{Slot:26b}].id
 
+execute store result score #length ckenja.reversible run data get storage ckenja.reversible: reflect.Items
+execute if score #length ckenja.reversible matches 1.. run playsound minecraft:block.sculk_sensor.clicking_stop master @a ~ ~ ~ 1 1
+execute if score #length ckenja.reversible matches 3.. run playsound minecraft:block.sculk_sensor.clicking_stop master @a ~ ~ ~ 1 1
+execute if score #length ckenja.reversible matches 5.. run playsound minecraft:block.sculk_sensor.clicking_stop master @a ~ ~ ~ 1 0.7
+execute if score #length ckenja.reversible matches 7.. run playsound minecraft:block.sculk_sensor.clicking_stop master @a ~ ~ ~ 1 1.26
 data remove storage ckenja.reversible: reflect.Items
